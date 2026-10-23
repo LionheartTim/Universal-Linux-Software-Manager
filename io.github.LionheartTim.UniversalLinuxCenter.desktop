@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.1
-Type=Application
-Name=Universal Linux Install & Uninstall Center
-Comment=Installeer en verwijder Linux-software: Flatpak, AppImage, RPM, DEB, Arch en Snap
-Exec=center-start
-Icon=io.github.LionheartTim.UniversalLinuxCenter
-Terminal=false
-Categories=Settings;PackageManager;
