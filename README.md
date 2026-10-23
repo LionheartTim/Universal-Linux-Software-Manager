@@ -1,6 +1,6 @@
 # Universal Linux Install & Uninstall Center
 
-**Version 1.1.0 – release candidate (test build)**
+**Version 1.1.0**
 
 Python/PyQt6 application with six tabs: Flatpak, AppImage, RPM, DEB, Arch and Snap. This is **not** a universal replacement for every distro's native software manager. It only enables managers that match the running host and are available there.
 
