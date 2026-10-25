@@ -1,0 +1,193 @@
+{
+    "id": "io.github.LionheartTim.UniversalLinuxSoftwareManager",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "6.11",
+    "sdk": "org.kde.Sdk",
+    "command": "center-start",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=x11",
+        "--share=network",
+        "--socket=wayland",
+        "--socket=fallback-x11",
+        "--device=dri",
+        "--filesystem=home",
+        "--filesystem=host:ro",
+        "--filesystem=host-os",
+        "--filesystem=host-etc",
+        "--filesystem=/var/mnt/",
+        "--filesystem=xdg-data/applications",
+        "--talk-name=org.freedesktop.Flatpak",
+        "--talk-name=org.freedesktop.Notifications"
+    ],
+    "modules": [
+        {
+            "name": "universal-linux-software-manager",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -Dm755 main.py /app/bin/main.py",
+                "install -Dm644 feature_tools.py /app/bin/feature_tools.py",
+                "install -Dm644 bulk_updates.py /app/bin/bulk_updates.py",
+                "install -Dm644 flatpak_exact_remove.py /app/bin/flatpak_exact_remove.py",
+                "install -Dm644 portable_managers.py /app/bin/portable_managers.py",
+                "install -Dm644 universal_backup.py /app/bin/universal_backup.py",
+                "install -Dm644 audio_backup.py /app/bin/audio_backup.py",
+                "install -Dm644 plasma_deferred_restore.py /app/bin/plasma_deferred_restore.py",
+                "install -Dm644 help_content.py /app/bin/help_content.py",
+                "install -Dm644 info_help.py /app/bin/info_help.py",
+                "install -Dm644 backup_app_filter.py /app/bin/backup_app_filter.py",
+                "install -Dm644 installed_inventory.py /app/bin/installed_inventory.py",
+                "install -Dm644 online_sources.py /app/bin/online_sources.py",
+                "install -Dm644 appimage_lifecycle.py /app/bin/appimage_lifecycle.py",
+                "install -Dm644 appimage_updates.py /app/bin/appimage_updates.py",
+                "install -Dm644 version_history.py /app/bin/version_history.py",
+                "install -Dm644 source_switch.py /app/bin/source_switch.py",
+                "install -Dm644 LICENSE /app/share/licenses/io.github.LionheartTim.UniversalLinuxSoftwareManager/LICENSE",
+                "install -Dm644 icon.png /app/bin/icon.png",
+                "chmod +x /app/bin/main.py",
+                "install -Dm644 io.github.LionheartTim.UniversalLinuxSoftwareManager.desktop /app/share/applications/io.github.LionheartTim.UniversalLinuxSoftwareManager.desktop",
+                "install -Dm644 io.github.LionheartTim.UniversalLinuxSoftwareManager.metainfo.xml /app/share/metainfo/io.github.LionheartTim.UniversalLinuxSoftwareManager.metainfo.xml",
+                "install -Dm644 icon-256.png /app/share/icons/hicolor/256x256/apps/io.github.LionheartTim.UniversalLinuxSoftwareManager.png",
+                "install -Dm644 icon-32.png /app/share/icons/hicolor/32x32/apps/io.github.LionheartTim.UniversalLinuxSoftwareManager.png",
+                "install -Dm644 icon-48.png /app/share/icons/hicolor/48x48/apps/io.github.LionheartTim.UniversalLinuxSoftwareManager.png",
+                "install -Dm644 icon-64.png /app/share/icons/hicolor/64x64/apps/io.github.LionheartTim.UniversalLinuxSoftwareManager.png",
+                "install -Dm644 icon-128.png /app/share/icons/hicolor/128x128/apps/io.github.LionheartTim.UniversalLinuxSoftwareManager.png",
+                "install -Dm644 icon.png /app/share/icons/hicolor/512x512/apps/io.github.LionheartTim.UniversalLinuxSoftwareManager.png",
+                "echo '#!/bin/sh' > /app/bin/center-start",
+                "echo 'PYTHONPATH=\"$(find /app/lib -type d -name site-packages -print -quit)\":$PYTHONPATH exec python3 /app/bin/main.py \"$@\"' >> /app/bin/center-start",
+                "chmod +x /app/bin/center-start",
+                "install -Dm644 local_file_backup.py /app/bin/local_file_backup.py",
+                "install -Dm644 backup_safety.py /app/bin/backup_safety.py",
+                "install -Dm644 restore_journal.py /app/bin/restore_journal.py"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "path": "main.py"
+                },
+                {
+                    "type": "file",
+                    "path": "icon.png"
+                },
+                {
+                    "type": "file",
+                    "path": "icon-32.png"
+                },
+                {
+                    "type": "file",
+                    "path": "icon-48.png"
+                },
+                {
+                    "type": "file",
+                    "path": "icon-64.png"
+                },
+                {
+                    "type": "file",
+                    "path": "icon-128.png"
+                },
+                {
+                    "type": "file",
+                    "path": "icon-256.png"
+                },
+                {
+                    "type": "file",
+                    "path": "io.github.LionheartTim.UniversalLinuxSoftwareManager.desktop"
+                },
+                {
+                    "type": "file",
+                    "path": "io.github.LionheartTim.UniversalLinuxSoftwareManager.metainfo.xml"
+                },
+                {
+                    "type": "file",
+                    "path": "LICENSE"
+                },
+                {
+                    "type": "file",
+                    "path": "feature_tools.py"
+                },
+                {
+                    "type": "file",
+                    "path": "bulk_updates.py"
+                },
+                {
+                    "type": "file",
+                    "path": "flatpak_exact_remove.py"
+                },
+                {
+                    "type": "file",
+                    "path": "installed_inventory.py"
+                },
+                {
+                    "type": "file",
+                    "path": "online_sources.py"
+                },
+                {
+                    "type": "file",
+                    "path": "source_switch.py"
+                },
+                {
+                    "type": "file",
+                    "path": "version_history.py"
+                },
+                {
+                    "type": "file",
+                    "path": "appimage_lifecycle.py"
+                },
+                {
+                    "type": "file",
+                    "path": "appimage_updates.py"
+                },
+                {
+                    "type": "file",
+                    "path": "universal_backup.py"
+                },
+                {
+                    "type": "file",
+                    "path": "audio_backup.py"
+                },
+                {
+                    "type": "file",
+                    "path": "plasma_deferred_restore.py"
+                },
+                {
+                    "type": "file",
+                    "path": "help_content.py"
+                },
+                {
+                    "type": "file",
+                    "path": "info_help.py"
+                },
+                {
+                    "type": "file",
+                    "path": "portable_managers.py"
+                },
+                {
+                    "type": "file",
+                    "path": "backup_app_filter.py"
+                },
+                {
+                    "type": "file",
+                    "path": "local_file_backup.py"
+                },
+                {
+                    "type": "file",
+                    "path": "backup_safety.py"
+                },
+                {
+                    "type": "file",
+                    "path": "restore_journal.py"
+                }
+            ]
+        }
+    ],
+    "base": "com.riverbankcomputing.PyQt.BaseApp",
+    "base-version": "6.11",
+    "build-options": {
+        "env": {
+            "BASEAPP_REMOVE_WEBENGINE": "1"
+        }
+    },
+    "cleanup-commands": [
+        "/app/cleanup-BaseApp.sh"
+    ]
+}

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Universal Linux Software Manager
+Comment=Installeer, update en beheer Linux-software via meerdere pakketformaten
+Exec=center-start
+Icon=io.github.LionheartTim.UniversalLinuxSoftwareManager
+Terminal=false
+Categories=Settings;PackageManager;

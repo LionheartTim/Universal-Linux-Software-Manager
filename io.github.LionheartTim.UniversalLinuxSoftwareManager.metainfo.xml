@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="desktop-application">
+  <id>io.github.LionheartTim.UniversalLinuxSoftwareManager</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-only</project_license>
+  <name>Universal Linux Software Manager</name>
+  <summary>Manage Linux applications, updates and local backups with offline help</summary>
+  <summary xml:lang="nl">Linux-applicaties, updates en lokale back-ups beheren met offline hulp</summary>
+  <description>
+    <p>Install, update and remove supported Linux applications using Flatpak, AppImage, RPM, DEB, Arch and Snap tools. Available package operations depend on the distribution and its package managers.</p>
+    <p>Use source-aware Updates, browse local repositories, Flathub and GitHub in read-only Discover, and save installer files and supported desktop settings to local, unencrypted .bu backups. KDE Plasma settings can be restored at the next login on supported systemd-based sessions. An English offline Info guide opens with F1.</p>
+    <p xml:lang="nl">Installeer, update en verwijder ondersteunde Linux-applicaties via Flatpak, AppImage, RPM, DEB, Arch en Snap. Welke functies beschikbaar zijn, hangt af van de distributie en de aanwezige pakketbeheerders.</p>
+    <p xml:lang="nl">Gebruik bronbewuste updates, zoek alleen-lezen in softwarebronnen, Flathub en GitHub en bewaar installatiebestanden en ondersteunde bureaubladinstellingen in lokale, niet-versleutelde .bu-back-ups. Op geschikte KDE Plasma-systemen kunnen instellingen bij de volgende aanmelding worden hersteld. De Engelstalige offline hulp opent met F1.</p>
+  </description>
+  <launchable type="desktop-id">io.github.LionheartTim.UniversalLinuxSoftwareManager.desktop</launchable>
+  <url type="homepage">https://github.com/LionheartTim/Universal-Linux-Software-Manager</url>
+  <url type="bugtracker">https://github.com/LionheartTim/Universal-Linux-Software-Manager/discussions/1</url>
+  <url type="help">https://github.com/LionheartTim/Universal-Linux-Software-Manager</url>
+  <developer id="io.github.lionhearttim">
+    <name>LionheartTim</name>
+  </developer>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="1.0.0" date="2026-10-24">
+      <description>
+        <p>Version 1.0.0 introduces ten tabs for supported Linux package tools, source-aware Updates, read-only Discover, local installer-and-desktop-settings backup/restore, KDE Plasma next-login restoration, and an offline F1 help guide.</p>
+      </description>
+    </release>
+  </releases>
+</component>
